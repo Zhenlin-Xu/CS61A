@@ -22,6 +22,18 @@ def roll_dice(num_rolls, dice=six_sided):
     assert num_rolls > 0, 'Must roll at least once.'
     # BEGIN PROBLEM 1
     "*** YOUR CODE HERE ***"
+    result = 0
+    flag = False
+    for _ in range(num_rolls):
+        this_roll = dice()
+        # print(this_roll)
+        if this_roll == 1:
+            flag = True
+            # break
+        else: 
+            result += this_roll
+    return result if not flag else 1
+                    
     # END PROBLEM 1
 
 
@@ -32,6 +44,21 @@ def piggy_points(score):
     """
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
+    squared_score = score**2
+    lowest_value = None
+    if squared_score < 10:
+        lowest_value = squared_score
+    else:
+        lowest_value = squared_score % 10
+        remaining_value = squared_score // 10
+        while remaining_value >= 10:
+            value = remaining_value % 10
+            if value < lowest_value:
+                lowest_value = value
+            remaining_value = remaining_value // 10
+        if remaining_value < lowest_value:
+            lowest_value = remaining_value
+    return 3 + lowest_value
     # END PROBLEM 2
 
 
