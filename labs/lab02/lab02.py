@@ -1,3 +1,5 @@
+from tkinter.tix import Tree
+
 
 def lambda_curry2(func):
     """
@@ -15,7 +17,7 @@ def lambda_curry2(func):
     3
     """
     "*** YOUR CODE HERE ***"
-    return ______
+    return lambda x: lambda y : func(x, y) 
 
 
 def count_cond(condition):
@@ -46,7 +48,13 @@ def count_cond(condition):
     8
     """
     "*** YOUR CODE HERE ***"
-
+    def inner_func(N):
+        num = 0
+        for idx in range(1, N+1):
+            if condition(N, idx) :
+                num += 1
+        return num
+    return inner_func
 
 def compose1(f, g):
     """Return the composition function which given x, computes f(g(x)).
@@ -81,7 +89,9 @@ def composite_identity(f, g):
     False
     """
     "*** YOUR CODE HERE ***"
-
+    def inner_func(x):
+        return True if f(g(x)) == g(f(x)) else False
+    return inner_func
 
 def cycle(f1, f2, f3):
     """Returns a function that is itself a higher-order function.
