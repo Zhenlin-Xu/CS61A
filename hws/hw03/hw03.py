@@ -167,8 +167,10 @@ def make_anonymous_factorial():
     >>> check(HW_SOURCE_FILE, 'make_anonymous_factorial', ['Assign', 'AugAssign', 'FunctionDef', 'Recursion'])
     True
     """
-    return 'YOUR_EXPRESSION_HERE'
-
+    return (lambda f: lambda k: f(f, k))(lambda f, k: 1 if k == 1 else k * f(f, k-1) )
+    
+    # lambda n : 1 if n == 1 else n * make_anonymous_factorial()(n-1) 
+    # fact = lambda n: 1 if n == 1 else mul(n, fact(sub(n, 1)))
 
 def print_move(origin, destination):
     """Print instructions to move a disk."""
