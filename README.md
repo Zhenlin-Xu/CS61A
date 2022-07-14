@@ -3,7 +3,7 @@
 [![Berkerly - CS61a Spring 2021](https://img.shields.io/badge/Berkerly-CS61a_Spring_2021-blue?style=for-the-badge)](https://)
 [![Status - Finishing](https://img.shields.io/badge/Status-Finishing-red?style=for-the-badge)](https://)
 
-[![Lab - 01-05, 10](https://img.shields.io/badge/Lab-01--05%2C_10-success?style=for-the-badge)](https://)
+[![Lab - 01-06, 10](https://img.shields.io/badge/Lab-01--05%2C_10-success?style=for-the-badge)](https://)
 [![Homework - 01-04](https://img.shields.io/badge/Homework-01--04-success?style=for-the-badge)](https://)
 [![Project - 01-02](https://img.shields.io/badge/Lab-01--02-success?style=for-the-badge)](https://)
 
@@ -18,11 +18,15 @@ Spring 2021, Pamela Fox, Paul Hilfinger
 - [x] Lab 03: Recursion, Tree Recursion
 - [x] Lab 04: Midterm Review (No assignment available)
 - [x] Lab 05: Python Lists, Data Abstraction, Trees
-- [ ] Lab 06:
-- [ ] Lab 075:
-- [ ] Lab 08:
-- [ ] Lab 09:
+- [x] Lab 06: Nonlocal, Mutability, Iterators and Generators
+- [ ] Lab 07: Object-Oriented Programming, Linked Lists, Mutable Trees
+- [ ] Lab 08: Midterm Review
+- [ ] Lab 09: Midterm Review
 - [x] Lab 10: Scheme
+- [ ] Lab 11: Interpreter
+- [ ] Lab 12: Tail Recursion, Scheme
+- [ ] Lab 13: Regular Expression
+- [ ] Lab 14: Final Review 
 
 ---
 
@@ -36,4 +40,5 @@ Spring 2021, Pamela Fox, Paul Hilfinger
 
 ### Project
 - [x] Hog
-- [x] Cat
+- [x] Cats
+- [ ] Ants
