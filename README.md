@@ -35,7 +35,7 @@ Spring 2021, Pamela Fox, Paul Hilfinger
 - [x] HW 02: Higher-Order Functions
 - [x] HW 03: Recursion
 - [x] HW 04: Trees, Data Abstraction
-
+- [x] HW 05: Object-Oriented Programming, Linked Lists, Iterators and Generators
 ---
 
 ### Project
